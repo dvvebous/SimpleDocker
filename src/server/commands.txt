@@ -1,5 +1,0 @@
-#!/bin/bash
-gcc main.c -lfcgi -o server
-sudo spawn-fcgi -p 8080 -n ./server
-cp nginx.conf /usr/share/nginx/nginx.conf
-sudo service nginx restart # nginx -s reload
